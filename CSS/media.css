@@ -177,7 +177,7 @@
         transition: bacground-image .3s linear;
     }
    
-    .nav__form{
+    .header__form{
         order: 2;
     }
 
@@ -476,7 +476,7 @@
         transition: background-image .3s linear;
         -webkit-transition: .2s ease;
     }
-    .nav__form{
+    .header__form{
         order: 2;
     }
 
@@ -599,7 +599,7 @@
         display: flex; /* иконка гамбургер видна */
         order: 1;
     }
-    .nav__form{
+    .header__form{
         order: 2;
     }
 
@@ -943,7 +943,7 @@
         order: 1;
     }
 
-    .nav__form{
+    .header__form{
         order: 2;
     }
 
@@ -1095,7 +1095,7 @@
         order: 1;
     }
 
-    .nav__form{
+    .header__form{
         order: 2;
     }
 
