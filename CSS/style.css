@@ -1,28 +1,31 @@
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat-Bold.woff');
-	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+	src: local('MontserratBold'), local('Montserrat-Bold'),
 		url('../fonts/Montserrat-Bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat-ExtraBold.woff');
-	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+	src: local('MontserratExtraBold'), local('Montserrat-ExtraBold'),
 		url('../fonts/Montserrat-ExtraBold.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat-Regular.woff');
-	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+	src: local('MontserratRegular'), local('Montserrat-Regular'),
 		url('../fonts/Montserrat-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 * {  
@@ -32,7 +35,7 @@
 }
 
 body{
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Montserrat' , 'sans-serif';
     margin: 0;
     min-width: 320px;
     overflow-y: scroll;
