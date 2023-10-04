@@ -196,13 +196,11 @@ body{
 }
 
 .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
+    width: 200px;
+    height: 20px;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 0%;
     background: #FFFFFF;
-
-    ;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
