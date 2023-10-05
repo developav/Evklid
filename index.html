@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/normolise.css">
+    <link rel="preload" href="./fonts/Montserrat-Regular.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="CSS/normolize.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/style.min.css">
+    <link rel="stylesheet" href="CSS/media.min.css">
     <title>Евклид проектные системы</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
         <div class="container header__container">
             <a href="#" class="header__link" aria-label="ссылка на сайт компании Евклид">
                 <picture>
-                    <source media="(max-width:375px)" srcset="IMG/Vector-mobile.png">
-                    <source media="(max-width:768px)" srcset="IMG/Vector-768.png">
-                    <source media="(max-width:1024px)" srcset="IMG/Vector-tablet.png">
-                    <img id="img" class="header__image" src="IMG/Vector.png" alt="Логотип компании Евклид">
+                    <source media="(max-width:375px)" srcset="IMG/Vector-mobile.webp">
+                    <source media="(max-width:768px)" srcset="IMG/Vector-768.webp">
+                    <source media="(max-width:1024px)" srcset="IMG/Vector-tablet.webp">
+                    <img id="img" class="header__image" src="IMG/Vector.webp" alt="Логотип компании Евклид">
                 </picture>
             </a>
             <nav class="nav">
@@ -59,9 +60,30 @@
             <div class="container hero">
                         <div class="swiper" role="banner">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide" style="background-image: url(../IMG/low-angle-desctop.jpg);" aria-label="Слайдер с изображениями проектов компании" role="banner"></div>
-                                <div class="swiper-slide" style="background-image: url(../IMG/apartment-apartment-building-architecture-building-323705\ 2.jpg);"aria-label="Слайдер с изображениями проектов компании" role="banner"></div>
-                                <div class="swiper-slide" style="background-image: url(../IMG/brown-and-blue-glass-building-2093076\ 2.jpg);" aria-label="Слайдер с изображениями проектов компании" role="banner"></div>
+                                <div class="swiper-slide" aria-label="Слайдер с изображениями проектов компании" role="banner">
+                                    <picture>
+                                        <source media="(max-width:375px)" srcset="IMG/low-angle-mobile.webp">
+                                        <source media="(max-width:768px)" srcset="IMG/low-angle-768.webp">
+                                        <source media="(max-width:1024px)" srcset="IMG/low-angle-tablet.webp">
+                                        <img id="img"  src="IMG/low-angle-desctop.webp" alt="Логотип компании Евклид">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide" aria-label="Слайдер с изображениями проектов компании" role="banner">
+                                    <picture>
+                                        <source media="(max-width:375px)" srcset="IMG/apartment-apartment-building-architecture-building-323705\ 2.webp">
+                                        <source media="(max-width:768px)" srcset="IMG/apartment-apartment-building-architecture-building-323705\ 2.webp">
+                                        <source media="(max-width:1024px)" srcset="IMG/apartment-apartment-building-architecture-building-323705\ 2.webp">
+                                        <img id="img2"  src="IMG/apartment-apartment-building-architecture-building-323705 2.webp" alt="Логотип компании Евклид">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide" aria-label="Слайдер с изображениями проектов компании" role="banner">
+                                    <picture>
+                                        <source media="(max-width:375px)" srcset="IMG/brown-and-blue-glass-building-2093076 2.webp">
+                                        <source media="(max-width:768px)" srcset="IMG/brown-and-blue-glass-building-2093076 2.webp">
+                                        <source media="(max-width:1024px)" srcset="IMG/brown-and-blue-glass-building-2093076 2.webp">
+                                        <img id="img3"  src="IMG/brown-and-blue-glass-building-2093076 2.webp" alt="Логотип компании Евклид">
+                                    </picture>
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -81,7 +103,7 @@
                     Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
                 </p>
                 <div class="about__content">
-                    <div class="about__group"  aria-role="banner" aria-label="Изображение процесса">
+                    <div class="about__group" aria-role="banner" aria-label="Изображение процесса">
                         <div class="about__link">
                             <p class="about__group-text">
                                 Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
@@ -247,7 +269,7 @@
         <div class="container footer__container">
             <div class="footer__first">
                     <a href="#" class="footer__link">
-                        <img class="footer__image" src="./IMG/Vector-2.png" alt="Логотип">
+                        <img class="footer__image" src="./IMG/Vector-2.webp" alt="Логотип">
                     </a>
                 <ul class="footer__list">
                     <li class="footer__item">
@@ -311,9 +333,9 @@
         </div>
     </footer>
     <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script defer src="js/slider.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="js/slider.js"></script>
-    <script defer src="js/tabs.js"></script>
+    <script defer src="js/tabs.min.js"></script>
 </body>
 </html>
