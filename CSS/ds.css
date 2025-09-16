@@ -1,0 +1,21 @@
+:root{
+     /* Colors */
+    --color-bunner-text: #ffffff;
+    --hover-button: #FF9900;
+    --active: #E1670E;
+    /* --text-color: #CACACA; */
+    --active-text: #333333;
+    --form-textarea: #666666;
+    /* Shadows */
+    --shadow-header: 0px 5px 40px rgba(0, 0, 0, 0.1);
+     /* Typography */
+     --font-primary: 'Montserrat', sans-serif;
+     --heading-xl: 70px;
+     --heading-l: 48px;
+     --text-lg: 24px;
+     --text-md: 16px;
+     /* Breakpoints */
+    --breakpoint-mobile: 320px;
+    --breakpoint-tablet: 998px;
+    --breakpoint-desktop: 1280px;
+}

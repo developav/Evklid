@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="./fonts/Montserrat-Regular.woff" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="CSS/normolize.min.css">
+    <link rel="stylesheet" href="css/normolize.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link rel="stylesheet" href="CSS/style.min.css">
-    <link rel="stylesheet" href="CSS/media.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Евклид проектные системы</title>
 </head>
 <body>
@@ -16,16 +16,16 @@
         <div class="container header__container">
             <a href="#" class="header__link" aria-label="ссылка на сайт компании Евклид">
                 <picture>
-                    <source media="(max-width:375px)" srcset="IMG/Vector-mobile.webp">
-                    <source media="(max-width:768px)" srcset="IMG/Vector-768.webp">
-                    <source media="(max-width:1024px)" srcset="IMG/Vector-tablet.webp">
-                    <img id="img" class="header__image" src="IMG/Vector.webp" alt="Логотип компании Евклид">
+                    <source media="(max-width:375px)" srcset="img/Vector-mobile.webp">
+                    <source media="(max-width:768px)" srcset="img/Vector-768.webp">
+                    <source media="(max-width:1024px)" srcset="img/Vector-tablet.webp">
+                    <img id="img" class="header__image" src="img/Vector.webp" alt="Логотип компании Евклид">
                 </picture>
             </a>
-            <nav class="nav">
+            <nav class="nav" role="navigation" aria-label="Основное меню">
                     <ul class="nav__list-desctop nav__list-mobile">
                         <li class="nav__list">
-                            <a href="#" class="nav__link">О нас</a>
+                            <a href="/" class="nav__link" aria-label="О нас" aria-current="page">О нас</a>
                         </li>
                         <li class="nav__list">
                             <a href="#" class="nav__link">Проекты</a> 
@@ -40,7 +40,7 @@
                             <a href="#" class="nav__link">Контакты</a> 
                         </li>
                     </ul>
-                    <button class="nav__button" aria-label="Кнопка меню"></button>
+                    <button class="nav__button" aria-label="Кнопка меню" aria-expanded="false" aria-controls="menu"></button>
             </nav>
             <form class="header__form" action="https://jsonplaceholder.typicode.com/posts">
                 <input type="text" placeholder="Что будем искать?" class="header__search">
@@ -57,43 +57,44 @@
     </header>
     <main class="main">
         <section class="section">
-            <div class="container hero">
+            <div class="hero">
                         <div class="swiper" role="banner">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" aria-label="Слайдер с изображениями проектов компании" role="banner">
                                     <picture>
-                                        <source media="(max-width:375px)" srcset="IMG/low-angle-mobile.webp">
-                                        <source media="(max-width:768px)" srcset="IMG/low-angle-768.webp">
-                                        <source media="(max-width:1024px)" srcset="IMG/low-angle-tablet.webp">
-                                        <img id="img"  src="IMG/low-angle-desctop.webp" alt="Логотип компании Евклид">
+                                        <source media="(max-width:375px)" srcset="img/low-angle-mobile.webp">
+                                        <source media="(max-width:768px)" srcset="img/low-angle-768.webp">
+                                        <source media="(max-width:1024px)" srcset="img/low-angle-tablet.webp">
+                                        <img id="img"  src="img/low-angle-desctop.webp" alt="Логотип компании Евклид">
                                     </picture>
                                 </div>
                                 <div class="swiper-slide" aria-label="Слайдер с изображениями проектов компании" role="banner">
                                     <picture>
-                                        <source media="(max-width:375px)" srcset="IMG/apartment-apartment-building-architecture-building-323705\ 2.webp">
-                                        <source media="(max-width:768px)" srcset="IMG/apartment-apartment-building-architecture-building-323705\ 2.webp">
-                                        <source media="(max-width:1024px)" srcset="IMG/apartment-apartment-building-architecture-building-323705\ 2.webp">
-                                        <img id="img2"  src="IMG/apartment-apartment-building-architecture-building-323705 2.webp" alt="Логотип компании Евклид">
+                                        <source media="(max-width:375px)" srcset="img/apartment-apartment-building-architecture-building-323705\ 2.webp">
+                                        <source media="(max-width:768px)" srcset="img/apartment-apartment-building-architecture-building-323705\ 2.webp">
+                                        <source media="(max-width:1024px)" srcset="img/apartment-apartment-building-architecture-building-323705\ 2.webp">
+                                        <img id="img2"  src="img/apartment-apartment-building-architecture-building-323705 2.webp" alt="Логотип компании Евклид">
                                     </picture>
                                 </div>
                                 <div class="swiper-slide" aria-label="Слайдер с изображениями проектов компании" role="banner">
                                     <picture>
-                                        <source media="(max-width:375px)" srcset="IMG/brown-and-blue-glass-building-2093076 2.webp">
-                                        <source media="(max-width:768px)" srcset="IMG/brown-and-blue-glass-building-2093076 2.webp">
-                                        <source media="(max-width:1024px)" srcset="IMG/brown-and-blue-glass-building-2093076 2.webp">
-                                        <img id="img3"  src="IMG/brown-and-blue-glass-building-2093076 2.webp" alt="Логотип компании Евклид">
+                                        <source media="(max-width:375px)" srcset="img/brown-and-blue-glass-building-2093076 2.webp">
+                                        <source media="(max-width:768px)" srcset="img/brown-and-blue-glass-building-2093076 2.webp">
+                                        <source media="(max-width:1024px)" srcset="img/brown-and-blue-glass-building-2093076 2.webp">
+                                        <img id="img3"  src="img/brown-and-blue-glass-building-2093076 2.webp" alt="Логотип компании Евклид">
                                     </picture>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
-                <div class="hero__description">
-                    <h1 class="hero__heading">Проектные решения любой сложности</h1>
-                    <p class="hero__text">
-                        Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-                    </p>
-                    <button class="button" aria-label="Заказать расчёт">Заказать расчёт</button>
-                </div>
+                        <div class="container">
+                            <div class="hero__description">
+                                <h1 class="hero__heading">Проектные решения любой сложности</h1>
+                                <p class="hero__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                                <a class="hero__button" href="#" aria-label="Заказать расчёт">Заказать расчёт</a>
+                            </div>
+                        </div>
+                
             </div>
         </section>
         <section class="section">
@@ -103,12 +104,12 @@
                     Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
                 </p>
                 <div class="about__content">
-                    <div class="about__group" aria-role="banner" aria-label="Изображение процесса">
+                    <div class="about__group" aria-label="Изображение процесса">
                         <div class="about__link">
                             <p class="about__group-text">
                                 Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
                             </p>
-                            <a class="button button_about" href="#" aria-label="на подробное описание">Подробнее</a>
+                            <a class="button about__button" href="#" aria-label="на подробное описание">Подробнее</a>
                         </div>
                     </div>
                     <div class="about__column-group" aria-label="Блок первый">
@@ -119,7 +120,7 @@
                             </p>
                         </div>
                         <div class="about__column"  aria-label="Блок второй">
-                            <h3 class="about__col-heading">В своём стремлении повысить</h3>
+                            <h3 class="about__column-heading">В своём стремлении повысить</h3>
                             <p class="about__description about__description__column">
                                 Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. 
                             </p>
@@ -147,9 +148,10 @@
                             Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. 
                             Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
                         </p>
-                        <a href="#" class="button button_work" aria-label="на описание">Подробнее</a>
-                        <a href="#" class="button button_work-link" aria-label="на просмотр договора">Договор</a>
-                    </div aria-label="Изображение процесса">
+                        <a href="#" class="button work__description-button" aria-label="на описание">Подробнее</a>
+                        <a href="#" class="button work__description-button-link" aria-label="на просмотр договора">Договор</a>
+                    </div>
+                    <img class="work__image" src="./img/Rectangle 18-3.webp" alt="Изображение процесса консультации">
                 </div>
                 <div class="work__container work__container-two" data-target="two">
                     <div class="work__description">
@@ -159,9 +161,10 @@
                             А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. 
                             Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
                         </p>
-                        <a href="#" class="button button_work" aria-label="на описание">Подробнее</a>
-                        <a href="#" class="button button_work-link" aria-label="на просмотр договора">Договор</a>
+                        <a href="#" class="button work__description-button" aria-label="на описание">Подробнее</a>
+                        <a href="#" class="button work__description-button-link" aria-label="на просмотр договора">Договор</a>
                     </div>
+                    <img class="work__image" src="./img/Rectangle 18.webp" alt="Изображение процесса составления сметы">
                 </div>
                 <div class="work__container work__container-three" data-target="three">
                     <div class="work__description">
@@ -171,9 +174,10 @@
                             Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. 
                             Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
                         </p>
-                        <a href="#" class="button button_work" aria-label="на описание">Подробнее</a>
-                        <a href="#" class="button button_work-link" aria-label="на просмотр договора">Договор</a>
+                        <a href="#" class="button work__description-button" aria-label="на описание">Подробнее</a>
+                        <a href="#" class="button work__description-button-link" aria-label="на просмотр договора">Договор</a>
                     </div>
+                    <img class="work__image" src="./img/Rectangle 19.webp" alt="Изображение процесса привлечения подрядчиков">
                 </div>
                 <div class="work__container work__container-four" data-target="four">
                     <div class="work__description">
@@ -183,20 +187,21 @@
                             Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. 
                             Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
                         </p>
-                        <a href="#" class="button button_work" aria-label="на описание">Подробнее</a>
-                        <a href="#" class="button button_work-link" aria-label="на просмотр договора">Договор</a>
+                        <a href="#" class="button work__description-button" aria-label="на описание">Подробнее</a>
+                        <a href="#" class="button work__description-button-link" aria-label="на просмотр договора">Договор</a>
                     </div>
+                    <img class="work__image" src="./img/Rectangle 20.webp" alt="Изображение процесса инспектирования этапов работ">
                 </div>
             </div>
         </section>
        <section class="section">
            <div class="container question">
             <h2 class="question__head">Часто задаваемые вопросы</h2>
-            <ul id="accordion" class="question__list">
-                <li class="question__item" aria-label="При нажатии раскрывается ответ на вопрос">
-                    <h3 class="question__heading">Из чего формируется конечная стоимость проекта?</h3>
-                    <div class="question__heading-text">
-                        <p class="question__heading-content" >
+            <ul id="accordion" class="question__list"  role="tablist">
+                <li class="question__item" aria-label="При нажатии раскрывается ответ на вопрос" >
+                    <h3 class="question__heading" id="tab-1" role="tab" aria-controls="panel-1" aria-selected="false" aria-expanded="false">Из чего формируется конечная стоимость проекта?</h3>
+                    <div class="question__heading-text" aria-labelledby="tab-1" hidden>
+                        <p class="question__heading-content">
                             Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
                             Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. 
                             А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
@@ -268,8 +273,8 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__first">
-                    <a href="#" class="footer__link">
-                        <img class="footer__image" src="./IMG/Vector-2.webp" alt="Логотип">
+                    <a href="#" class="footer__link-logo">
+                        <img class="footer__image" src="./img/Vector-2.webp" alt="Логотип">
                     </a>
                 <ul class="footer__list">
                     <li class="footer__item">
@@ -294,7 +299,7 @@
                         <a href="#" class="footer__links">Партнерское соглашение</a>
                     </li>
                 </ul>
-                <div class="footer__social" aria-role="Блок ссылок на социальные сети">
+                <div class="footer__social">
                     <a class="footer__social-link" aria-label="Ссылка на страничку facebook" href="https://www.facebook.com">
                         <svg class="footer__image-social" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30 0C13.5 0 0 13.5241 0 30.1807C0 45.241 10.98 57.741 25.32 60V38.9157H17.7V30.1807H25.32V23.5241C25.32 15.9639 29.79 11.8072 36.66 11.8072C39.93 11.8072 43.3499 12.3795 43.3499 12.3795V19.8193H39.57C35.85 19.8193 34.68 22.1386 34.68 24.5181V30.1807H43.0199L41.6699 38.9157H34.68V60C41.7493 58.8791 48.1866 55.2576 52.8297 49.7893C57.4729 44.3211 60.016 37.3664 59.9999 30.1807C59.9999 13.5241 46.4999 0 30 0Z"/>
@@ -319,7 +324,7 @@
                 <form class="footer__form__action" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                 <input class="footer__form" type="text" name="username" placeholder="Фамилия, имя и отчество*" aria-label="Поле ввода">
                 <input class="footer__form" type="text" name="email" placeholder="E-mail*" aria-label="Поле ввода">
-                <textarea class="footer__texarea" name="table" placeholder="Сообщение" cols="65" rows="7" aria-label="Поле ввода"></textarea>
+                <textarea class="footer__textarea" name="table" placeholder="Сообщение" cols="65" rows="7" aria-label="Поле ввода"></textarea>
                 <button class="button footer__button" aria-label="Кнопка отправить данные">Отправить данные</button>
                 <input class="footer__checkbox" type="checkbox" id="data" name="agree" value="yes" aria-checked="false">
                 <label for="data">Согласен на обработку данных</label>
@@ -333,9 +338,10 @@
         </div>
     </footer>
     <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script defer src="js/slider.min.js"></script>
-    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="js/tabs.min.js"></script>
+    <script defer src="js/tabs.js"></script>
+    <script defer src="js/slider.js"></script>
 </body>
 </html>
